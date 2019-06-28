@@ -9,6 +9,32 @@ License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html
 
 from rotate import rotate_word
 
+'''
+def rotate_letter(letter, n):
+    """Rotates a letter by n places.  Does not change other chars.
+    letter: single-letter string
+    n: int
+    Returns: single-letter string
+    """
+    
+    start = ord('a')
+
+    c = ord(letter) - start
+    i = (c + n) % 26 + start
+    return chr(i)
+
+def rotate_word(word, n):
+    """Rotates a word by n places.
+    word: string
+    n: integer
+    Returns: string
+    """
+    
+    res = ''
+    for letter in word:
+        res += rotate_letter(letter, n)
+    return res
+'''
 
 def make_word_dict():
     """Read the words in words.txt and return a dictionary
