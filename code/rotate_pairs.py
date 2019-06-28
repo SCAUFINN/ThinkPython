@@ -15,9 +15,9 @@ def make_word_dict():
     that contains the words as keys"""
     d = dict()
     fin = open('words.txt')
-    for line in fin:
+    for line in fin: 
         word = line.strip().lower()
-        d[word] = word
+        d[word] = word # create a list[] dict d
 
     return d
 
