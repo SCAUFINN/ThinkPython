@@ -17,9 +17,9 @@ def invert_dict(d):
 
     Returns: dict
     """
-    inverse = {}
-    for key, val in d.iteritems():
-        inverse.setdefault(val, []).append(key)
+    inverse = {}  # create an empty dictionary
+    for key, val in d.iteritems(): # loop the dictionary
+        inverse.setdefault(val, []).append(key) # if not exist, create a new list
     return inverse
 
 
